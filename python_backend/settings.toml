@@ -1,0 +1,37 @@
+[development]
+DEBUG = true
+# Database Config
+SQLALCHEMY_DATABASE_URI = "sqlite:///development.db"
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+# Load extensions
+EXTENSIONS = [
+    "app.ext.database:init_app",
+]
+
+[test]
+DEBUG = true
+# Database Config
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+SQLALCHEMY_DATABASE_URI = "mysql://...."
+DB_HOST = 'abc123'
+DB_PORT = 1234
+DB_NAME = 'test'
+DB_USER = 'admin'
+# Load extensions
+EXTENSIONS = [
+    "app.ext.database:init_app",
+]
+
+[production]
+DEBUG = false
+# Database Config
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+SQLALCHEMY_DATABASE_URI = "mysql://...."
+DB_HOST = 'abc123'
+DB_PORT = 1234
+DB_NAME = 'test'
+DB_USER = 'admin'
+# Load extensions
+EXTENSIONS = [
+    "app.ext.database:init_app",
+]
