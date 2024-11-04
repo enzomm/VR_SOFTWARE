@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Sets the build target to ES2020.
+    "useDefineForClassFields": true, // Use the "define" syntax for class fields.
+    "module": "ESNext", // Sets the module system to ESNext.
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Includes ES2020 and DOM standard libraries.
+    "skipLibCheck": true, // Skips type checking in libraries.
+    "baseUrl": ".", // Sets the base folder for path resolution.
+    "paths": {
+      "@/*": ["./src/*"] // Defines an alias "@" that points to the "src" folder.
+    },
+    "moduleResolution": "bundler", // Uses bundler module resolution.
+    "allowImportingTsExtensions": true, // Allows import of .ts extensions.
+    "resolveJsonModule": true, // Allows import of JSON modules.
+    "isolatedModules": true, // Compiles each file as an independent module.
+    "noEmit": true, // Does not output files.
+    "jsx": "preserve", // Preserves JSX syntax in the emitted code.
+    "strict": true, // Enables strict type checking.
+    "noUnusedLocals": true, // Error in unused locations.
+    "noUnusedParameters": true, // Error in unused parameters.
+    "noFallthroughCasesInSwitch": true // Error in cases of switches falling.
+  },
+  "include": [
+    "src/**/*.ts", // Includes all .ts files in the src folder.
+    "src/**/*.tsx", // Includes all .tsx files in the src folder.
+    "src/**/*.vue" // Includes all .vue files in the src folder.
+  ],
+  "references": [
+    { "path": "./tsconfig.node.json" } // References the node configuration.
+  ]
+}

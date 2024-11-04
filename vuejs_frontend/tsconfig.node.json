@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true, // Enables incremental compilation, useful for larger projects.
+    "skipLibCheck": true, // Skips type checking in libraries.
+    "module": "ESNext", // Sets the module system to ESNext.
+    "moduleResolution": "bundler", // Uses bundler module resolution.
+    "allowSyntheticDefaultImports": true, // Allows import of synthetic default values.
+    "strict": true // Enables strict type checking.
+  },
+  "include": [
+    "vite.config.ts" // Includes the Vite configuration file.
+  ]
+}
