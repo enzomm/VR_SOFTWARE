@@ -48,7 +48,7 @@ function handleToggleTheme() {
 
 <template>
   <header class="flex h-12 flex-row justify-between items-center gap-2 bg-neutral-200 dark:bg-neutral-900 border-b-2 border-neutral-300 dark:border-neutral-800 transition-all">      
-    <div class="">
+    <div>
       <Button @click="handleToggleMenu()" variant="outline" class="hidden xl:inline-block p-2 ml-1 bg-neutral-200 dark:bg-neutral-900 dark:text-zinc-300 text-zinc-900 dark:hover:text-sky-500 hover:text-sky-500 dark:hover:bg-neutral-800 hover:bg-neutral-100 shadow-none">
         <PanelLeftClose v-if="isOpen" :size=20 :stroke-width=2 />
         <PanelLeftOpen v-else :size=20 :stroke-width=2 />
