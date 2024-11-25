@@ -28,12 +28,24 @@ const isOpen = defineModel("toggleMenu", {required:true});
             </ul>
 
             <ul class="flex flex-col gap-2 px-2 mt-4 mb-2">
+                <!-- Nav Item -->
                 <li class="flex items-center justify-start xl:w-full">
                     <RouterLink class="flex w-full items-center gap-3 px-3 py-2 rounded-lg dark:text-zinc-600 text-zinc-700 dark:hover:text-zinc-300 hover:text-zinc-900 dark:hover:bg-slate-900 hover:bg-slate-200 transition" to="/">
                         <LifeBuoy :size=22 :stroke-width=2 class="icon" />
                         <span v-if="isOpen" class="hidden text-sm xl:inline-block">Support</span>
                     </RouterLink>
                 </li>
+                <!-- Separador -->   
+                <hr class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent"/>
+                <!-- Info -->
+                <div class="w-full flex flex-col items-center">
+                    <p class="text-sm font-normal text-opacity-50 uppercase">
+                        Loopia
+                    </p>
+                    <p class="mb-0 text-xs font-light text-opacity-50">
+                        Version 1.0.0
+                    </p>                          
+                </div>
             </ul>
         </nav>
     </aside>
